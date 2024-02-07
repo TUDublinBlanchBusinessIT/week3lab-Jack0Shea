@@ -10,16 +10,13 @@
 
 from divisors import divisors
 
-#define the function header called perfectNumber expecting one argument
 def perfectNumber(x):
-    result = "False"
-    
-    
+    result = False
     if sum(divisors(x)) == x:
-        result = "True"
-
-    print(result)
+        result = True
     return result
+    
+    
+    
 
         
-perfectNumber(6)
